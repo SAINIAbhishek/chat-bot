@@ -14,7 +14,7 @@
   top: 0;
   bottom: 0;
   margin: auto;
-  width: 70%;
+  width: 80%;
   height: 90%;
   background-color: #FFF;
   right: 0;
@@ -26,7 +26,8 @@
   overflow: hidden;
 
   app-sidebar {
-    flex-basis: 30%;
+    width: 100%;
+    max-width: 380px;
     display: block;
     height: 100%;
     border-right: 1px solid #e8e8e8;

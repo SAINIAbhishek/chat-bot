@@ -32,11 +32,12 @@
         color: #545454;
         display: flex;
         align-items: center;
+        font-weight: 600;
       }
 
     }
 
-    .actionButtons {
+    .action_buttons {
       min-width: 50px;
       display: flex;
 
@@ -55,7 +56,8 @@
     display: flex;
     flex-direction: column-reverse;
     padding: 20px 50px;
-    overflow: scroll;
+    overflow-x: hidden;
+    overflow-y: auto;
 
     .message {
       margin-top: 10px;
@@ -68,6 +70,7 @@
         background-color: #fff;
         border-radius: 5px;
         padding: 10px;
+        font-size: 14px;
 
         .time {
           text-align: right;
@@ -111,7 +114,7 @@
         border-radius: 4px;
         resize: none;
         outline: none;
-        padding: 14px;
+        padding: 4px 14px 10px 14px;
         font-family: sans-serif;
         box-sizing: border-box;
       }
@@ -136,4 +139,5 @@
     }
 
   }
+
 }

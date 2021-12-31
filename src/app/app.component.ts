@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import {Conversation} from './models/conversation';
 
 @Component({
   selector: 'app-root',
@@ -6,8 +7,15 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'chat-bot';
 
-  conversation = '';
+  get conversation(): Conversation {
+    return this._conversation;
+  }
+
+  private _conversation: Conversation = <Conversation>{};
+
+  public onConversationClicked(event: Conversation) {
+    this._conversation = event;
+  }
 
 }

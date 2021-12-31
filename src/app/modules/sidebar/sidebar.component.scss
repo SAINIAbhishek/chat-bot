@@ -118,11 +118,13 @@
 
           .name {
             color: #040404;
+            font-weight: 600;
+            font-size: 16px;
           }
 
           .time {
             color: #979797;
-            font-size: 13px;
+            font-size: 12px;
             padding-top: 2px;
           }
 
@@ -130,8 +132,8 @@
 
         .message {
           color: #717171;
-          font-size: 13px;
-          padding-top: 5px;
+          font-size: 14px;
+          padding-top: 2px;
           display: flex;
           align-items: center;
 
@@ -139,6 +141,22 @@
             margin-right: 2px;
           }
 
+          span {
+            width: 246px;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+          }
+
+        }
+
+      }
+
+      &.active {
+        background-color: rgba(#ccc, 0.2);
+
+        .time {
+          color: #040404 !important;
         }
 
       }

@@ -14,13 +14,20 @@
 
     <div id="search_box">
       <img alt="Search icon" src="../../../assets/images/searchIcon.svg" width="19px">
-      <input placeholder="Search or start the new chat" type="text">
+      <input
+        [(ngModel)]="searchText"
+        placeholder="Search or start the new chat"
+        type="text">
     </div>
   </div>
 
   <div id="sidebar_content">
     <div *ngIf="!conversations.length" id="no_conversations">All chats are archived</div>
-    <div *ngFor="let conversation of conversations" class="conversation">
+    <div
+      (click)="onSelectConversation(conversation)"
+      *ngFor="let conversation of !searchText ? conversations : filteredConversations"
+      [ngClass]="{'active': conversation.id === selected.id}"
+      class="conversation">
       <div class="picture">
         <img alt="Default avatar" src="../../../assets/images/noPic.svg">
       </div>
@@ -38,7 +45,7 @@
             *ngIf="conversation.latestMessageRead"
             alt="Double tick blue"
             src="../../../assets/images/doubleTickBlue.svg">
-          {{ conversation.latestMessage }}
+          <span>{{ conversation.latestMessage }}</span>
         </div>
       </div>
     </div>

@@ -3,10 +3,11 @@
 
 <div id="chat_container">
 
-  <app-sidebar></app-sidebar>
+  <app-sidebar (conversationClicked)="onConversationClicked($event)"></app-sidebar>
 
   <div id="chat_body">
-    <div id="chat_placeholder" *ngIf="!conversation">
+
+    <div *ngIf="!conversation.name" id="chat_placeholder">
       <img alt="Phone icon" src="../assets/images/phoneIcon.png" style="width: 400px;">
       <h2>Keep your phone connected</h2>
       <p>
@@ -17,9 +18,10 @@
       <div class="separator"></div>
       <p>WhatsApp is available for Mac. <a href="#">Get it here</a></p>
     </div>
-  </div>
 
-  <app-chat *ngIf="!!conversation"></app-chat>
+    <app-chat *ngIf="!!conversation.name" [conversation]="conversation"></app-chat>
+
+  </div>
 
 </div>
 
