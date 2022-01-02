@@ -1,0 +1,24 @@
+<section class="sidebar-content" (click)="onClick()">
+  <div class="sidebar-content__picture">
+    <img
+      alt="Avatar"
+      mat-card-avatar
+      src="https://avatars.dicebear.com/api/human/abcd{{ '1' }}}.svg">
+  </div>
+  <div class="sidebar-content__room">
+    <div class="sidebar-content__room__header">
+      <div class="sidebar-content__room__header__name">{{ 'conversation.name' }}</div>
+      <div class="sidebar-content__room__header__time">{{ 'conversation.time' }}</div>
+    </div>
+    <div class="sidebar-content__room__message">
+      <img
+        *ngIf="false"
+        alt="Double tick"
+        src="assets/images/doubleTick.svg">
+      <img
+        alt="Double tick blue"
+        src="assets/images/doubleTickBlue.svg">
+      <span>{{ 'conversation.latestMessage' }}</span>
+    </div>
+  </div>
+</section>

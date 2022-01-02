@@ -1,0 +1,17 @@
+<div class="chat__area">
+
+  <ng-container>
+    <div
+      [ngClass]="{'chat__area__message-owner': ''}"
+      class="chat__area__message">
+      <span class="chat__area__message__name"></span>
+      <span class="chat__area__message__text"></span>
+      <span class="chat__area__message__time"></span>
+    </div>
+  </ng-container>
+
+  <ng-template #noData>
+    <h1 style="text-align: center">No Messages</h1>
+  </ng-template>
+
+</div>

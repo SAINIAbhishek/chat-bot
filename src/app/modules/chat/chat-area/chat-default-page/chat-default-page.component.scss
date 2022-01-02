@@ -1,0 +1,27 @@
+.chat-default-page {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  flex-direction: column;
+  width: 100%;
+  background: #F8F9FB;
+
+  h2 {
+    padding-top: 20px;
+    font-size: 35px;
+    font-weight: normal;
+    color: #555555;
+  }
+
+  .separator {
+    width: 50%;
+    border-top: 1px solid #eaeaea;
+    margin: 30px 0;
+  }
+
+  p {
+    text-align: center;
+  }
+
+}
