@@ -5,7 +5,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { SidebarComponent } from './modules/chat-container/sidebar/sidebar.component';
 import { ChatComponent } from './modules/chat/chat.component';
-import {FormsModule} from '@angular/forms';
+import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import {PickerModule} from '@ctrl/ngx-emoji-mart';
 import { LoginComponent } from './modules/login/login.component';
 import { ChatContainerComponent } from './modules/chat-container/chat-container.component';
@@ -33,7 +33,8 @@ import { ChatAreaComponent } from './modules/chat-container/chat-area/chat-area.
     PickerModule,
     AngularFireModule.initializeApp(environment.firebaseConfig),
     AngularFireAuthModule,
-    AngularFirestoreModule
+    AngularFirestoreModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

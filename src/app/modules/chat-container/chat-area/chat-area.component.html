@@ -1,0 +1,39 @@
+<section id="chat-area">
+
+  <div class="chat-area__header">
+
+  </div>
+
+  <div class="chat-area__body">
+
+  </div>
+
+  <div class="chat-area__footer">
+    <div class="chat-area__footer__smiley__icon">
+      <img
+        (click)="emojiPickerVisible = !emojiPickerVisible"
+        alt="Smile icon"
+        src="assets/images/smileIcon.svg">
+      <div *ngIf="emojiPickerVisible" style="position: absolute; bottom: 50px;">
+        <emoji-mart
+          (emojiClick)="emojiClicked($event)"
+          [darkMode]="false"
+          emoji="point_up"
+          title="Pick your emoji…">
+        </emoji-mart>
+      </div>
+    </div>
+    <form (ngSubmit)="submit()" [formGroup]="form" autocomplete="off" class="is-flex">
+      <input
+        formControlName="message"
+        id="message"
+        name="message"
+        placeholder="Type a message"
+        type="text">
+    </form>
+    <div class="chat-area__footer__mic__icon">
+      <img src="assets/images/voiceIcon.svg" alt="Voice icon">
+    </div>
+  </div>
+
+</section>
