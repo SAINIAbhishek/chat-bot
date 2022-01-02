@@ -16,7 +16,7 @@
   margin: auto;
   width: 80%;
   height: 90%;
-  background-color: #FFF;
+  background-color: #EDEDED;
   right: 0;
   left: 0;
   box-shadow: -1px 1px 5px rgba(#333, 0.2);
@@ -24,43 +24,4 @@
   display: flex;
   flex-direction: row;
   overflow: hidden;
-
-  app-sidebar {
-    width: 100%;
-    max-width: 380px;
-    display: block;
-    height: 100%;
-    border-right: 1px solid #e8e8e8;
-  }
-
-  #chat_body {
-    background-color: #f7f9fa;
-    flex-grow: 1;
-
-    #chat_placeholder {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      height: 100%;
-      flex-direction: column;
-
-      h2 {
-        font-size: 35px;
-        font-weight: normal;
-        color: #555555;
-      }
-
-      .separator {
-        width: 50%;
-        border-top: 1px solid #eaeaea;
-        margin: 30px 0;
-      }
-
-      p {
-        text-align: center;
-      }
-    }
-
-  }
-
 }
