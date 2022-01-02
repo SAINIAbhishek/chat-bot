@@ -1,27 +1,31 @@
-#bg_header {
-  width: 100%;
-  height: 20vh;
-  background-color: #019688;
-}
+#app {
 
-#bg_body {
-  height: 80vh;
-  background: #e0e0e0;
-}
+  &__header {
+    width: 100%;
+    height: 20vh;
+    background-color: #019688;
+  }
 
-#chat_container {
-  position: fixed;
-  top: 0;
-  bottom: 0;
-  margin: auto;
-  width: 80%;
-  height: 90%;
-  background-color: #EDEDED;
-  right: 0;
-  left: 0;
-  box-shadow: -1px 1px 5px rgba(#333, 0.2);
-  border-radius: 3px;
-  display: flex;
-  flex-direction: row;
-  overflow: hidden;
+  &__body {
+    height: 80vh;
+    background: #e0e0e0;
+  }
+
+  &__chat {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    width: 80%;
+    height: 90%;
+    background-color: #EDEDED;
+    right: 0;
+    left: 0;
+    box-shadow: -1px 1px 5px rgba(#333, 0.2);
+    border-radius: 3px;
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+  }
+
 }

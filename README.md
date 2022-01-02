@@ -1,8 +1,32 @@
 # ChatBot Application
 
-It is a learning project. In this project, have created the clone of the WhatsApp web.
+It is a learning project. In this project, have created the clone of the WhatsApp Web interface
+and use Firebase as backend. In this, user can authenticate with Google to create / join a group and start 
+messaging.
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.1.15.
+
+##To run this locally
+Add your firebase configuration in the env file like this:
+
+firebaseConfig: {
+<br>
+apiKey: "your api key here...",
+<br>
+authDomain: "your auth domain...",
+<br>
+projectId: "your project id here...",
+<br>
+storageBucket: "your storage bucket here...",
+<br>
+messagingSenderId: "your sender id here...",
+<br>
+appId: "your app id here...",
+<br>
+measurementId: "your measurement id here..."
+<br>
+}
+
 
 ## Development server
 
