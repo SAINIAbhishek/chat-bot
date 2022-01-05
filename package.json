@@ -15,7 +15,7 @@
     "url": "git+https://github.com/SAINIAbhishek/chat-bot.git"
   },
   "author": "Abhishek SAINI",
-  "license": "MIT",
+  "license": "ISC",
   "homepage": "https://github.com/SAINIAbhishek/chat-bot#readme",
   "dependencies": {
     "@angular/animations": "~10.2.5",
