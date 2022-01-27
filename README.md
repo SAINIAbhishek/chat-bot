@@ -1,4 +1,4 @@
-# ChatBot Application
+# WhatsApp Clone Application
 
 It is a learning project. In this project, have created the clone of the WhatsApp web.
 
