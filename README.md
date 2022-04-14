@@ -6,7 +6,7 @@ messaging.
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.1.15.
 
-##To run this locally
+## To run this locally
 Add your firebase configuration in the env file like this:
 
 firebaseConfig: {
