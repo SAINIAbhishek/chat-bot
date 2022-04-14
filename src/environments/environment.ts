@@ -6,7 +6,13 @@ export const environment = {
   production: false,
   userKey: 'chat_user',
   firebaseConfig: {
-
+    apiKey: "AIzaSyDNnuJhQ_DUbl9X6VScWX0A3hO2ICBvscY",
+    authDomain: "whatsapp-clone-3bfd2.firebaseapp.com",
+    projectId: "whatsapp-clone-3bfd2",
+    storageBucket: "whatsapp-clone-3bfd2.appspot.com",
+    messagingSenderId: "486900707858",
+    appId: "1:486900707858:web:98569e7567d0f3b5f35ecb",
+    measurementId: "G-P0XLYWWECD"
   }
 };
 

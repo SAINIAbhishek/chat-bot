@@ -1,6 +1,6 @@
 import {Component, EventEmitter, OnInit, Output} from '@angular/core';
-import {Conversation} from '../../models/conversation';
-import {conversations} from '../../models/static-data/conversations';
+import {Conversation} from '../../../models/conversation';
+import {conversations} from '../../../models/static-data/conversations';
 
 @Component({
   selector: 'app-sidebar',
